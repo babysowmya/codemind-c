@@ -1,8 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int x,y,z,max;
+    int x,y,z,a;
     scanf("%d%d%d",&x,&y,&z);
-    max=((5*x)+(10*y))/z;
-    printf("%d",max);
+    a=(5*x+10*y)/z;
+    printf("%d",a);
+    
 }
