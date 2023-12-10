@@ -1,14 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int e,m,p,c,cs;
-    scanf("%d%d%d%d%d",&e,&m,&p,&c,&cs);
-    if(e<35 || m<35 || p<35 ||  c<35 || cs<35)
-    {
-        printf("FAILED");
-    }
-    else
+    int t,e,m,h,s;
+    scanf("%d%d%d%d%d",&t,&e,&m,&h,&s);
+    if(t>34 && e>34 && m>34 && h>34 && s>34)
     {
         printf("PASSED");
     }
+    else
+    {
+        printf("FAILED");
+    }
+    
 }
