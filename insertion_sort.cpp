@@ -32,8 +32,8 @@ int main()
 	}
 	printf("before swapping: ");
 	p_a(a,n);
-	printf("after swapping: ");
 	i_s(a,n);
+	printf("after swapping: ");
 	p_a(a,n);
 	return 0;
 }
