@@ -1,21 +1,34 @@
 #include<stdio.h>
-int li_sch(int *a,int i,int size,int key)
+int li_sch(int *a,int size,int i,int key)
 {
-	if(a[i]==key)
+	if(i==size)
 	{
-	return i;
+		return -1;
 	}
-	return -1;
-li_sch(a,i++,n,key);
+	  if(a[i]==key)
+      {
+		return i;
+	  }
+		return li_sch(a,size,i+1,key);
 }
 int main()
 {
-	int n,a[n],key;
+	int n;
 	scanf("%d",&n);
-	for(int i=0;i<n;i++)
+	int i,a[n];
+	for(i=0;i<n;i++)
 	{
 		scanf("%d",&a[i]);
 	}
+	int key;
 	scanf("%d",&key);
-	li_sch(a,i,n,key);
+	int res=li_sch(a,n,0,key);
+	if(res==-1)
+	{
+		printf("key not found");
+	}
+	else
+	{
+		printf("key found at %d index",res);
+	}
 }
